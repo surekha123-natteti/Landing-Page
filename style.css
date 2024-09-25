@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 #website {
     display: flex;
     flex-direction: column;
@@ -11,7 +19,17 @@
         justify-content: center;
         align-items: center;
         gap: 700px;
-        padding: 20px 0px;
+        padding: 20px 10px;
+
+        #flatpacklogo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 2px;
+            width: 10px;
+
+        }
 
         #nav_menu {
             display: flex;
@@ -47,7 +65,7 @@
         justify-content: center;
         align-items: center;
         gap: 50px;
-        padding: 110px 300px;
+        padding: 110px 350px;
         background: linear-gradient(rgba(255, 255, 255, 0.053), rgba(173, 230, 220, 0.201)), url("./home-bg.png");
 
         #heading {
@@ -104,12 +122,14 @@
         align-items: center;
         background-color: rgba(240, 248, 255, 0.889);
         padding: 20px 200px;
+
         #site_1 {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            #img{
+
+            #img {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -123,40 +143,85 @@
 
             }
 
-            #site_2{
+            #site_2 {
                 font-size: 20px;
                 width: 60%;
             }
         }
     }
 
-    #page {
+    #pages {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2px 200px;
 
-        #content {
+        #page {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 200px;
+
+            #content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 100px 40px;
+                gap: 15px;
+
+                #content1 {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                #content2 {
+                    font-size: 25px;
+                }
+
+                #content3 {
+                    font-size: 20px;
+                    color: gray;
+                }
+            }
+        }
+
+        #page2 {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
-            padding: 100px 40px;
-            gap: 15px;
+            align-items: center;
 
-            #content1 {
-                font-size: 30px;
-                font-weight: bold;
-            }
+            #page {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 2px 200px;
 
-            #content2 {
-                font-size: 25px;
-            }
+                #content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 100px 40px;
+                    gap: 15px;
 
-            #content3 {
-                font-size: 20px;
-                color: gray;
+                    #content1 {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+
+                    #content2 {
+                        font-size: 25px;
+                    }
+
+                    #content3 {
+                        font-size: 20px;
+                        color: gray;
+                    }
+                }
             }
         }
     }
@@ -235,10 +300,12 @@
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
-                #pic{
+
+                #pic {
                     border: 20px black;
                     background-color: rgba(128, 128, 128, 0.286);
-                    img{
+
+                    img {
                         padding: 20px;
                         border-radius: 60px;
                     }
@@ -252,6 +319,7 @@
                     gap: 10px;
                     background-color: white;
                     padding: 27px 20px;
+
                     #sent {
                         color: gray;
                         font-size: 15px;
@@ -259,11 +327,13 @@
                         text-align: left;
                         width: 400px;
                     }
+
                     #all {
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
                         align-items: center;
+
                         #third {
                             color: rgb(135, 235, 233);
                             font-size: 20px;
@@ -340,11 +410,13 @@
             font-size: 15px;
             color: gray;
         }
-        #x{
+
+        #x {
             height: 20px;
             width: 20px;
         }
-        #like{
+
+        #like {
             height: 30px;
         }
     }
